@@ -39,6 +39,9 @@ class AppTest {
     @Test
     void translateArabicToRomanus() {
         assertEquals("IV", RomanusTranslatus.toRomanus(4));
+        assertEquals("XIX", RomanusTranslatus.toRomanus(19));
+        assertEquals("XXXI", RomanusTranslatus.toRomanus(31));
+        assertEquals("MXCIX", RomanusTranslatus.toRomanus(1099));
     }
 
 }
